@@ -14,7 +14,7 @@ import java.util.List;
 public class MemberController {
     private final MemberService memberService;
 
-    @Autowired //오토 와이어드가 DI임. 헷갈리면 pdf 컨트롤러 → 서비스 → 리파지토리 보기
+    @Autowired //오토 와이어드가 DI임. 헷갈리면 pdf (컨트롤러 → 서비스 → 리파지토리) 그림 보기
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
