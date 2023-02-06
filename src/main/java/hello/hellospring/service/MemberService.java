@@ -5,11 +5,12 @@ import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Transactional
 public class MemberService { //이전에만든 repository(고객으로 수행하는 매서드 등)와 domain(고객객체 등)을 이용해 비즈니스 로직 작성
 
     private final MemberRepository memberRepository;
